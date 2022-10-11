@@ -5,9 +5,11 @@
 
 body {
   background-color: var(--clr-gray-light);
+  overflow-x: hidden;
 }
 
 .header {
+  @include flex-config($align: center);
   min-height: 10vh;
   background-color: var(--bg-hero);
   padding: 2rem 0;
@@ -31,6 +33,7 @@ body {
 .section-hero {
   background-color: var(--bg-hero);
   color: var(--clr-paragraph);
+  position: relative;
 
   @include mq(md) {
     min-height: 60vh;
@@ -40,7 +43,6 @@ body {
 .hero {
   @include flex-config($direction: column, $align: center);
   gap: 5rem;
-  position: relative;
   padding-bottom: 5rem;
 
   @include mq(md) {
@@ -96,11 +98,18 @@ body {
   margin-top: 5rem;
 
   @include mq(md) {
-    @include position($pos: absolute, $bottom: 12rem, $left: 12.5%);
+    position: relative;
+    z-index: 5;
     flex-direction: row;
     justify-content: space-around;
     width: 75%;
+    margin-top: -5rem;
   }
+
+  /* @include mq(lg) {
+    bottom: 10rem;
+    left: 14rem;
+  } */
 }
 
 .section-additional-info {
