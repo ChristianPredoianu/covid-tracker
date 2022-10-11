@@ -5,16 +5,16 @@
   margin: 0 auto;
   padding: 0 1rem;
 
-  @include respond(sm) {
+  @include mq(sm) {
     max-width: 64rem;
     padding: 0 3rem;
   }
 
-  @include respond(md) {
+  @include mq(md) {
     max-width: 102.4rem;
   }
 
-  @include respond(lg) {
+  @include mq(lg) {
     max-width: 150rem;
   }
 }
