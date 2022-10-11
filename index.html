@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +22,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Covid Tracker</title>
   </head>
+
   <body>
+    <header class="header">
+      <nav class="nav container">
+        <img src="./assets/coronavirus.png" alt="logo" class="nav__logo" />
+        <p class="nav__logo-text">COVID-19</p>
+      </nav>
+    </header>
+    <section class="section-hero">
+      <div class="hero container">
+        <div class="hero-cta">
+          <h1 class="hero-cta__heading">Covid-19 Live Tracker</h1>
+          <p class="hero-cta__paragraph">
+            The Coronavirus (COVID-19 was first reported in Wuhan, Hubei, China
+            in December 2019. The outbreak was later recognized as a pandemic by
+            the World Health Organisation (WHO) on 11 March 2020
+          </p>
+          <button class="cta-btn cta-btn--red">How to protect</button>
+          <button class="cta-btn cta-btn--transparent">Find a doctor</button>
+        </div>
+        <img
+          src="./assets/red-covid19.png"
+          alt="coronavirus"
+          class="hero-cta__img"
+        />
+      </div>
+    </section>
+    <div class="global-stats container">
+      <div class="global-stats-overview">
+        <img
+          src="./assets/world.png"
+          alt=""
+          class="global-stats-overview__flag"
+          id="global-stats-flag"
+        />
+        <p class="global-stats-overview__paragraph">Stats Overview</p>
+        <p class="global-stats-overview__value" id="global-stats-value">
+          Sweden
+        </p>
+      </div>
+      <div class="global-stats-overview">
+        <img
+          src="./assets/world.png"
+          alt=""
+          class="global-stats-overview__flag"
+          id="global-stats-flag"
+        />
+        <p class="global-stats-overview__paragraph">Stats Overview</p>
+        <p class="global-stats-overview__value" id="global-stats-value">
+          Sweden
+        </p>
+      </div>
+      <div class="global-stats-overview">
+        <img
+          src="./assets/world.png"
+          alt=""
+          class="global-stats-overview__flag"
+          id="global-stats-flag"
+        />
+        <p class="global-stats-overview__paragraph">Stats Overview</p>
+        <p class="global-stats-overview__value" id="global-stats-value">
+          Sweden
+        </p>
+      </div>
+      <div class="global-stats-overview">
+        <img
+          src="./assets/world.png"
+          alt=""
+          class="global-stats-overview__flag"
+          id="global-stats-flag"
+        />
+        <p class="global-stats-overview__paragraph">Stats Overview</p>
+        <p class="global-stats-overview__value" id="global-stats-value">
+          Sweden
+        </p>
+      </div>
+    </div>
+
+    <div class="section-additional-info container">
+      <div class="additional-info">
+        <div class="stats-card stats-card--green">
+          <img
+            src="./assets/calendar.png"
+            alt="calendar"
+            class="stats-card__img"
+          />
+          <p calss="stats-card__value">0</p>
+          <p class="stats-card__text">Cases Today</p>
+        </div>
+      </div>
+      <div class="additional-info">
+        <div class="stats-card stats-card--green">
+          <img
+            src="./assets/calendar.png"
+            alt="calendar"
+            class="stats-card__img"
+          />
+          <p calss="stats-card__value">0</p>
+          <p class="stats-card__text">Cases Today</p>
+        </div>
+      </div>
+      <div class="additional-info">
+        <div class="stats-card stats-card--green">
+          <img
+            src="./assets/calendar.png"
+            alt="calendar"
+            class="stats-card__img"
+          />
+          <p calss="stats-card__value">0</p>
+          <p class="stats-card__text">Cases Today</p>
+        </div>
+      </div>
+      <div class="additional-info">
+        <div class="stats-card stats-card--green">
+          <img
+            src="./assets/calendar.png"
+            alt="calendar"
+            class="stats-card__img"
+          />
+          <p calss="stats-card__value">0</p>
+          <p class="stats-card__text">Cases Today</p>
+        </div>
+      </div>
+      <div class="additional-info">
+        <div class="stats-card stats-card--green">
+          <img
+            src="./assets/calendar.png"
+            alt="calendar"
+            class="stats-card__img"
+          />
+          <p calss="stats-card__value">0</p>
+          <p class="stats-card__text">Cases Today</p>
+        </div>
+      </div>
+      <div class="additional-info">
+        <div class="stats-card stats-card--green">
+          <img
+            src="./assets/calendar.png"
+            alt="calendar"
+            class="stats-card__img"
+          />
+          <p calss="stats-card__value">0</p>
+          <p class="stats-card__text">Cases Today</p>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
