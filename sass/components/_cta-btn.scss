@@ -1,0 +1,19 @@
+.cta-btn {
+  color: var(--clr-light);
+  padding: 1rem;
+  outline: none;
+  border: 1.5px solid transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &--red {
+    background-color: hsl(0, 79%, 64%);
+  }
+
+  &--transparent {
+    background-color: transparent;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    border: 1.5px solid var(--clr-light);
+  }
+}

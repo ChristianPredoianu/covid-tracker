@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+.global-stats-overview {
+  @include flex-config($direction: column, $align: center);
+  gap: 1rem;
+
+  &__flag {
+    width: 5rem;
+  }
+
+  &__paragraph {
+    font-size: 1.2rem;
+  }
+
+  &__value {
+    font-size: 1.8rem;
+  }
+}

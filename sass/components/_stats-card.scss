@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+.stats-card {
+  @include flex-config($direction: column, $align: center);
+  gap: 1rem;
+  position: relative;
+  padding: 4rem;
+  color: var(--clr-light);
+  border-radius: var(--border-radius);
+
+  &__img {
+    @include position($pos: absolute, $top: -2.5rem, $left: 4.2rem);
+    width: 5rem;
+  }
+
+  &--green {
+    background-color: hsl(120, 100%, 25%);
+  }
+}
