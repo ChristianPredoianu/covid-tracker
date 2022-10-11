@@ -1,0 +1,126 @@
+@use './abstracts/' as *;
+@use './base/' as *;
+@use './utilities/container' as *;
+@use './components/' as *;
+
+body {
+  background-color: var(--clr-gray-light);
+}
+
+.header {
+  min-height: 10vh;
+  background-color: var(--bg-hero);
+  padding: 2rem 0;
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+.nav {
+  @include flex-config($align: center);
+  color: var(--clr-light);
+
+  &__logo {
+    width: 4rem;
+  }
+
+  &__logo-text {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    margin-left: 1rem;
+  }
+}
+
+.section-hero {
+  background-color: var(--bg-hero);
+  color: var(--clr-paragraph);
+
+  @include mq(md) {
+    min-height: 60vh;
+  }
+}
+
+.hero {
+  @include flex-config($direction: column, $align: center);
+  gap: 5rem;
+  position: relative;
+  padding-bottom: 5rem;
+
+  @include mq(md) {
+    min-height: 60vh;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+    padding-bottom: 0;
+  }
+}
+
+.hero-cta {
+  padding: 5rem 0;
+
+  @include mq(md) {
+    width: 40%;
+    padding: 0;
+  }
+
+  &__heading {
+    font-size: clamp(1.8rem, 2vw, 2rem);
+    color: var(--clr-light);
+  }
+
+  &__paragraph {
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
+    padding: 2rem 2rem 2rem 0;
+    line-height: 1.5;
+  }
+
+  &__img {
+    width: 20rem;
+    animation: spin 50s linear infinite;
+
+    @include mq(md) {
+      width: 25rem;
+    }
+
+    @include mq(lg) {
+      width: 30rem;
+    }
+  }
+}
+
+.global-stats {
+  @include flex-config($align: center, $wrap: wrap, $justify: space-around);
+  gap: 3rem;
+  width: 90%;
+  background-color: var(--clr-light);
+  padding: 5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-top: 5rem;
+
+  @include mq(md) {
+    @include position($pos: absolute, $bottom: 12rem, $left: 12.5%);
+    flex-direction: row;
+    justify-content: space-around;
+    width: 75%;
+  }
+}
+
+.section-additional-info {
+  @include flex-config($wrap: wrap, $justify: space-around);
+  gap: 6rem;
+  width: 90%;
+  background-color: var(--clr-light);
+  margin-top: 5rem;
+  padding: 8rem 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  @include mq(md) {
+    width: 75%;
+    margin-top: 20rem;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
