@@ -1,4 +1,15 @@
 :root {
-  --fw-normal: 500;
+  --bg-primary: hsl(228, 24%, 96%);
+  --bg-hero: hsl(236, 53%, 32%);
+  --clr-paragraph: hsl(0, 0%, 64%);
+  --clr-light: hsl(0, 0%, 95%);
+  --clr-gray-light: hsl(0, 0%, 83%);
+
+  --fw-normal: 400;
   --fw-bold: 700;
+
+  --border-radius: 1rem;
+
+  --box-shadow: hsla(240, 30%, 28%, 0.25) 0px 6px 12px -2px,
+    hsla(0, 0%, 0%, 0.3) 0px 3px 7px -3px;
 }
