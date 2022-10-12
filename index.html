@@ -53,121 +53,131 @@
       <div class="global-stats-overview">
         <img
           src="./assets/world.png"
-          alt=""
+          alt="coronavirus"
           class="global-stats-overview__flag"
           id="global-stats-flag"
         />
         <p class="global-stats-overview__paragraph">Stats Overview</p>
-        <p class="global-stats-overview__value" id="global-stats-value">
-          Sweden
-        </p>
+        <p class="global-stats-overview__value" id="global-stats-country"></p>
       </div>
       <div class="global-stats-overview">
         <img
-          src="./assets/world.png"
-          alt=""
+          src="./assets/coronavirus-red.png"
+          alt="coronavirus"
           class="global-stats-overview__flag"
           id="global-stats-flag"
         />
-        <p class="global-stats-overview__paragraph">Stats Overview</p>
-        <p class="global-stats-overview__value" id="global-stats-value">
-          Sweden
-        </p>
+        <p class="global-stats-overview__paragraph">Total Cases</p>
+        <p class="global-stats-overview__value" id="global-stats-cases"></p>
       </div>
       <div class="global-stats-overview">
         <img
-          src="./assets/world.png"
-          alt=""
+          src="./assets/coronavirus-green.png"
+          alt="coronavirus"
           class="global-stats-overview__flag"
           id="global-stats-flag"
         />
-        <p class="global-stats-overview__paragraph">Stats Overview</p>
-        <p class="global-stats-overview__value" id="global-stats-value">
-          Sweden
-        </p>
+        <p class="global-stats-overview__paragraph">Total Recovered</p>
+        <p class="global-stats-overview__value" id="global-stats-recovered"></p>
       </div>
       <div class="global-stats-overview">
         <img
-          src="./assets/world.png"
-          alt=""
+          src="./assets/coronavirus-black.png"
+          alt="coronavirus"
           class="global-stats-overview__flag"
           id="global-stats-flag"
         />
-        <p class="global-stats-overview__paragraph">Stats Overview</p>
-        <p class="global-stats-overview__value" id="global-stats-value">
-          Sweden
-        </p>
+        <p class="global-stats-overview__paragraph">Total Deaths</p>
+        <p class="global-stats-overview__value" id="global-stats-deaths"></p>
       </div>
     </div>
 
-    <div class="section-additional-info container">
-      <div class="additional-info">
-        <div class="stats-card stats-card--green">
-          <img
-            src="./assets/calendar.png"
-            alt="calendar"
-            class="stats-card__img"
-          />
-          <p calss="stats-card__value">0</p>
-          <p class="stats-card__text">Cases Today</p>
+    <section class="section-additional-info container">
+      <div class="additional-info-stats">
+        <div class="additional-info">
+          <div class="stats-card stats-card--green">
+            <img
+              src="./assets/calendar.png"
+              alt="calendar"
+              class="stats-card__img"
+            />
+            <p class="stats-card__value" id="additional-info-cases">0</p>
+            <p class="stats-card__text">Cases Today</p>
+          </div>
+        </div>
+        <div class="additional-info">
+          <div class="stats-card stats-card--light-blue">
+            <img
+              src="./assets/memorial.png"
+              alt="calendar"
+              class="stats-card__img"
+            />
+            <p class="stats-card__value" id="additional-info-deaths">0</p>
+            <p class="stats-card__text">Deaths Today</p>
+          </div>
+        </div>
+        <div class="additional-info">
+          <div class="stats-card stats-card--purple">
+            <img
+              src="./assets/hospital.png"
+              alt="calendar"
+              class="stats-card__img"
+            />
+            <p class="stats-card__value" id="additional-info-intensive">0</p>
+            <p class="stats-card__text">Intensive Care</p>
+          </div>
+        </div>
+        <div class="additional-info">
+          <div class="stats-card stats-card--dark-blue">
+            <img
+              src="./assets/cover.png"
+              alt="calendar"
+              class="stats-card__img"
+            />
+            <p class="stats-card__value" id="additional-info-cases-million">
+              0
+            </p>
+            <p class="stats-card__text">Cases /1 mil</p>
+          </div>
+        </div>
+        <div class="additional-info">
+          <div class="stats-card stats-card--dark-green">
+            <img
+              src="./assets/memorial.png"
+              alt="calendar"
+              class="stats-card__img"
+            />
+            <p class="stats-card__value" id="additional-info-deaths-million">
+              0
+            </p>
+            <p class="stats-card__text">Deaths/1 mil</p>
+          </div>
+        </div>
+        <div class="additional-info">
+          <div class="stats-card stats-card--dark-yellow">
+            <img
+              src="./assets/cough.png"
+              alt="calendar"
+              class="stats-card__img"
+            />
+            <p class="stats-card__value" id="additional-info-cases-active">0</p>
+            <p class="stats-card__text">Active Cases</p>
+          </div>
         </div>
       </div>
-      <div class="additional-info">
-        <div class="stats-card stats-card--green">
-          <img
-            src="./assets/calendar.png"
-            alt="calendar"
-            class="stats-card__img"
+      <div class="additional-info-filter">
+        <div class="search-input-wrapper">
+          <input
+            type="text"
+            class="search-input-wrapper__input"
+            id="search-input"
+            placeholder="Filter to a location"
           />
-          <p calss="stats-card__value">0</p>
-          <p class="stats-card__text">Cases Today</p>
         </div>
+        <p class="additional-info-filter__cases">Cases</p>
+        <div class="country-cards" id="country-cards"></div>
       </div>
-      <div class="additional-info">
-        <div class="stats-card stats-card--green">
-          <img
-            src="./assets/calendar.png"
-            alt="calendar"
-            class="stats-card__img"
-          />
-          <p calss="stats-card__value">0</p>
-          <p class="stats-card__text">Cases Today</p>
-        </div>
-      </div>
-      <div class="additional-info">
-        <div class="stats-card stats-card--green">
-          <img
-            src="./assets/calendar.png"
-            alt="calendar"
-            class="stats-card__img"
-          />
-          <p calss="stats-card__value">0</p>
-          <p class="stats-card__text">Cases Today</p>
-        </div>
-      </div>
-      <div class="additional-info">
-        <div class="stats-card stats-card--green">
-          <img
-            src="./assets/calendar.png"
-            alt="calendar"
-            class="stats-card__img"
-          />
-          <p calss="stats-card__value">0</p>
-          <p class="stats-card__text">Cases Today</p>
-        </div>
-      </div>
-      <div class="additional-info">
-        <div class="stats-card stats-card--green">
-          <img
-            src="./assets/calendar.png"
-            alt="calendar"
-            class="stats-card__img"
-          />
-          <p calss="stats-card__value">0</p>
-          <p class="stats-card__text">Cases Today</p>
-        </div>
-      </div>
-    </div>
+    </section>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
