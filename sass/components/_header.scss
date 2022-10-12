@@ -1,0 +1,23 @@
+@use '../abstracts/' as *;
+
+.header {
+  @include flex-config($align: center);
+  min-height: 10vh;
+  background-color: var(--bg-hero);
+  padding: 2rem 0;
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+.nav {
+  @include flex-config($align: center);
+  color: var(--clr-light);
+
+  &__logo {
+    width: 4rem;
+  }
+
+  &__logo-text {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    margin-left: 1rem;
+  }
+}
