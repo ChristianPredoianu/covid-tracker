@@ -1,0 +1,31 @@
+@use '../abstracts/' as *;
+
+.country-card {
+  @include flex-config($justify: space-between, $align: center);
+  width: 100%;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  background-color: var(--clr-gray-light);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &__value {
+  }
+}
+
+.country-card-country {
+  @include flex-config($align: center);
+
+  &__flag {
+    width: 2rem;
+  }
+
+  &__text {
+    margin-left: 1rem;
+  }
+}
+
+.active-country-card {
+  background-color: hsl(120, 55%, 75%);
+}
