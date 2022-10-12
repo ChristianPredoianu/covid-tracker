@@ -8,32 +8,10 @@ body {
   overflow-x: hidden;
 }
 
-.header {
-  @include flex-config($align: center);
-  min-height: 10vh;
-  background-color: var(--bg-hero);
-  padding: 2rem 0;
-  border-bottom: 1px solid hsl(0, 0%, 50%);
-}
-
-.nav {
-  @include flex-config($align: center);
-  color: var(--clr-light);
-
-  &__logo {
-    width: 4rem;
-  }
-
-  &__logo-text {
-    font-size: clamp(1.2rem, 2vw, 1.5rem);
-    margin-left: 1rem;
-  }
-}
-
 .section-hero {
+  position: relative;
   background-color: var(--bg-hero);
   color: var(--clr-paragraph);
-  position: relative;
 
   @include mq(md) {
     min-height: 60vh;
@@ -102,30 +80,81 @@ body {
     z-index: 5;
     flex-direction: row;
     justify-content: space-around;
-    width: 75%;
     margin-top: -5rem;
   }
-
-  /* @include mq(lg) {
-    bottom: 10rem;
-    left: 14rem;
-  } */
 }
 
 .section-additional-info {
-  @include flex-config($wrap: wrap, $justify: space-around);
-  gap: 6rem;
+  @include flex-config($direction: column);
+  gap: 3rem;
   width: 90%;
-  background-color: var(--clr-light);
   margin-top: 5rem;
-  padding: 8rem 0;
+
+  @include mq(md) {
+    @include flex-config(
+      $direction: row,
+      $justify: space-around,
+      $align: center
+    );
+    margin-top: 5rem;
+  }
+}
+
+.additional-info-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, max-content));
+  justify-content: center;
+  grid-gap: 6rem;
+  background-color: var(--clr-light);
+  padding: 10rem 0;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
 
   @include mq(md) {
-    width: 75%;
-    margin-top: 20rem;
+    width: 60%;
   }
+}
+
+.additional-info-filter {
+  @include flex-config($direction: column);
+  gap: 2rem;
+  width: 100%;
+  background-color: var(--clr-light);
+  padding: 3rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  &__cases {
+    text-align: right;
+    margin-right: 5rem;
+  }
+
+  @include mq(md) {
+    width: 35%;
+  }
+}
+
+.search-input-wrapper {
+  display: block;
+  border: none;
+  outline: none;
+
+  &__input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.country-cards {
+  @include flex-config($direction: column);
+  gap: 2rem;
+  height: 55rem;
 }
 
 @keyframes spin {
