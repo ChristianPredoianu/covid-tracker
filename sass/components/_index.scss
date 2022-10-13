@@ -1,5 +1,7 @@
 @forward 'header';
 @forward 'cta-btn';
 @forward 'global-stats-overview';
-@forward 'stats-card';
-@forward 'country-card';
+@forward './cards/stats-card';
+@forward './cards/country-card';
+@forward './cards/info-card';
+@forward './cards/symptoms-card';
