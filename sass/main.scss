@@ -1,7 +1,8 @@
 @use './abstracts/' as *;
 @use './base/' as *;
-@use './utilities/container' as *;
+@use './utilities' as *;
 @use './components/' as *;
+@use './animations/' as *;
 
 body {
   background-color: var(--clr-gray-light);
@@ -181,11 +182,5 @@ body {
 
   @include mq(md) {
     flex-direction: row;
-  }
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
   }
 }
