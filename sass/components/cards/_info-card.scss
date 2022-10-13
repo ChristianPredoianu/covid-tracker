@@ -1,0 +1,22 @@
+@use '../../abstracts/' as *;
+
+.covid-info-card {
+  @include flex-config($direction: column, $align: center);
+  background-color: var(--clr-light);
+  padding: 8rem 4rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+
+  &__img {
+    width: 8rem;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  &__paragraph {
+    font-size: var(--fs-paragraph);
+  }
+}

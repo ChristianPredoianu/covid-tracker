@@ -1,0 +1,20 @@
+@use '../../abstracts/' as *;
+
+.covid-symptom-card {
+  @include flex-config($direction: column, $align: center);
+  border: 1px solid hsl(0, 0%, 0%);
+  padding: 5rem;
+
+  &__img {
+    width: 8rem;
+  }
+
+  &__heading {
+    font-size: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  &__paragraph {
+    font-size: var(--fs-paragraph);
+  }
+}
