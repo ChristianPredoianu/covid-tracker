@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 :root {
   --bg-hero: hsl(236, 53%, 32%);
   --clr-paragraph: hsl(0, 0%, 64%);
@@ -11,4 +13,17 @@
 
   --box-shadow: hsla(240, 30%, 28%, 0.25) 0px 6px 12px -2px,
     hsla(0, 0%, 0%, 0.3) 0px 3px 7px -3px;
+
+  --fs-section-heading: clamp(2rem, 2vw, 3rem);
+  --fs-paragraph: clamp(1.4rem, 2vw, 1.6rem);
+
+  --margin-section: 10rem;
+
+  @include mq(md) {
+    --margin-section: 15rem;
+  }
+
+  --margin-sm: 5rem;
+  --margin-md: 10rem;
+  --margin-lg: 15rem;
 }
