@@ -41,7 +41,7 @@ body {
   }
 
   &__heading {
-    font-size: clamp(1.8rem, 2vw, 2rem);
+    font-size: clamp(1.8rem, 2vw, 3rem);
     color: var(--clr-light);
   }
 
@@ -66,9 +66,12 @@ body {
 }
 
 .global-stats {
-  @include flex-config($align: center, $wrap: wrap, $justify: space-around);
-  gap: 3rem;
-  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  width: 95%;
   background-color: var(--clr-light);
   padding: 5rem;
   border-radius: var(--border-radius);
@@ -87,7 +90,6 @@ body {
 .section-additional-info {
   @include flex-config($direction: column);
   gap: 3rem;
-  width: 90%;
   margin-top: 5rem;
 
   @include mq(md) {
@@ -155,6 +157,31 @@ body {
   @include flex-config($direction: column);
   gap: 2rem;
   height: 55rem;
+}
+
+.section-covid-info {
+  margin-top: var(--margin-section);
+
+  &__heading {
+    font-size: var(--fs-section-heading);
+    text-align: center;
+  }
+}
+
+.covid-info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: 2rem;
+  justify-content: center;
+  margin-top: var(--margin-sm);
+
+  @include mq(md) {
+    margin-top: var(--margin-md);
+  }
+
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 
 @keyframes spin {
