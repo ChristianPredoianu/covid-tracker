@@ -13,7 +13,6 @@ function initApp() {
     createCountryCards(data);
     addCountryCardEventListener(data);
     filterCountry(data);
-    console.log(data);
   });
 }
 
