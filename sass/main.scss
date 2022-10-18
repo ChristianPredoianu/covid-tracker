@@ -162,11 +162,11 @@ body {
 
 .section-covid-info {
   margin-top: var(--margin-section);
+}
 
-  &__heading {
-    font-size: var(--fs-section-heading);
-    text-align: center;
-  }
+.secondary-heading {
+  font-size: var(--fs-section-heading);
+  text-align: center;
 }
 
 .covid-info-cards {
@@ -183,4 +183,8 @@ body {
   @include mq(md) {
     flex-direction: row;
   }
+}
+
+.section-faq {
+  margin-top: var(--margin-section);
 }
