@@ -1,0 +1,22 @@
+@use '../abstracts/' as *;
+
+.footer {
+  @include flex-config($justify: center);
+  background-color: var(--bg-hero);
+  color: var(--clr-light);
+  margin-top: var(--margin-section);
+  padding: 10rem 0;
+}
+
+.footer-img {
+  @include flex-config($align: center);
+
+  &__img {
+    width: 4rem;
+  }
+
+  &__text {
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    margin-left: 1rem;
+  }
+}
