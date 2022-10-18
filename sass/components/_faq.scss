@@ -1,0 +1,56 @@
+@use '../abstracts/' as *;
+
+.faq {
+  @include flex-config($direction: column, $align: center);
+  width: 100%;
+  gap: 5rem;
+  margin-top: var(--margin-sm);
+
+  @include mq(md) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    margin-top: var(--margin-md);
+  }
+}
+
+.faq-buttons {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: 1rem;
+
+  @include mq(md) {
+    width: auto;
+    @include flex-config($direction: column);
+    gap: 1rem;
+  }
+}
+
+.faq-btn {
+  color: hsl(0, 1%, 52%);
+  padding: 2rem 0;
+  border: 1px solid hsl(0, 0%, 64%);
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  @include mq(md) {
+    padding: 1rem;
+  }
+}
+
+.active-faq-btn {
+  border: 2px solid hsl(0, 0%, 0%);
+  font-weight: var(--fw-bold);
+}
+
+.faq-paragraph {
+  line-height: 1.5;
+  font-weight: var(--fw-bold);
+
+  @include mq(md) {
+    width: 70%;
+    font-size: var(--fs-paragraph);
+  }
+}
