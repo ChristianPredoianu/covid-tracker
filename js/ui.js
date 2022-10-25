@@ -70,51 +70,74 @@ export function createCountryCards(data) {
 function setCountryFlagSrc(country) {
   let flagUrl = findFlagUrlByCountryName(country);
 
+  const worldImgUrl = new URL('/world.png', import.meta.url).href;
+
   switch (country) {
     case 'S. Korea':
-      return findFlagUrlByCountryName('South Korea');
+      flagUrl = findFlagUrlByCountryName('South Korea');
+      break;
     case 'DPRK':
-      return findFlagUrlByCountryName('North Korea');
+      flagUrl = findFlagUrlByCountryName('North Korea');
+      break;
     case 'Czechia':
-      return findFlagUrlByCountryName('Czech Republic');
+      flagUrl = findFlagUrlByCountryName('Czech Republic');
+      break;
     case 'Channel Islands':
-      return findFlagUrlByCountryName('Jersey');
+      flagUrl = findFlagUrlByCountryName('Jersey');
+      break;
     case 'Ivory Coast':
-      return findFlagUrlByCountryName(`Côte d'Ivoire`);
+      flagUrl = findFlagUrlByCountryName(`Côte d'Ivoire`);
+      break;
     case 'DRC':
-      return findFlagUrlByCountryName('Democratic Republic of the Congo');
+      flagUrl = findFlagUrlByCountryName('Democratic Republic of the Congo');
+      break;
     case 'Eswatini':
-      return findFlagUrlByCountryName('Swaziland');
+      flagUrl = findFlagUrlByCountryName('Swaziland');
+      break;
     case 'Cabo Verde':
-      return findFlagUrlByCountryName('Cape Verde');
+      flagUrl = findFlagUrlByCountryName('Cape Verde');
+      break;
     case 'Faeroe Islands':
-      return findFlagUrlByCountryName('Faroe Islands');
+      flagUrl = findFlagUrlByCountryName('Faroe Islands');
+      break;
     case 'CAR':
-      return findFlagUrlByCountryName('Central African Republic');
+      flagUrl = findFlagUrlByCountryName('Central African Republic');
+      break;
     case 'St. Vincent Grenadines':
-      return findFlagUrlByCountryName('Saint Vincent and the Grenadines');
+      flagUrl = findFlagUrlByCountryName('Saint Vincent and the Grenadines');
+      break;
     case 'Turks and Caicos':
-      return findFlagUrlByCountryName('Turks and Caicos Islands');
+      flagUrl = findFlagUrlByCountryName('Turks and Caicos Islands');
+      break;
     case 'St. Barth':
-      return findFlagUrlByCountryName('Saint Barthélemy');
+      flagUrl = findFlagUrlByCountryName('Saint Barthélemy');
+      break;
     case 'Saint Pierre Miquelon':
-      return findFlagUrlByCountryName('Saint Pierre and Miquelon');
+      flagUrl = findFlagUrlByCountryName('Saint Pierre and Miquelon');
+      break;
     case 'Caribbean Netherlands':
-      return findFlagUrlByCountryName('Netherlands Antilles');
+      flagUrl = findFlagUrlByCountryName('Netherlands Antilles');
+      break;
     case 'Saint Helena':
-      return findFlagUrlByCountryName(
+      flagUrl = findFlagUrlByCountryName(
         'Saint Helena, Ascension and Tristan da Cunha'
       );
+      break;
     case 'World':
-      return '../assets/world.png';
+      flagUrl = worldImgUrl;
+      break;
     case 'Diamond Princess':
-      return '../assets/world.png';
+      flagUrl = worldImgUrl;
+      break;
     case 'MS Zaandam':
-      return '../assets/world.png';
+      flagUrl = worldImgUrl;
+      break;
     case 'Réunion':
-      return '../assets/world.png';
+      flagUrl = worldImgUrl;
+      break;
     case 'Vatican City':
-      return findFlagUrlByCountryName('Holy See');
+      flagUrl = findFlagUrlByCountryName('Holy See');
+      break;
   }
 
   return flagUrl;
