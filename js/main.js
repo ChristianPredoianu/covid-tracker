@@ -76,7 +76,7 @@ function changeFaqParagraph() {
     case 'How it spreads':
       faqParagraph.innerText = faqData.spreads;
       break;
-    case 'How to protect yourself':
+    case 'How to protect':
       faqParagraph.innerText = faqData.protect;
       break;
     case 'Symptoms & testing':
