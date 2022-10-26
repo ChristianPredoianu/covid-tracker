@@ -6,7 +6,7 @@
   </a> 
 
   <h3 align="center">Covid Tracker</h3>
-   
+    
   <p align="center">
   Covid Tracker
     <br />
