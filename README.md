@@ -9,7 +9,7 @@
     
   <p align="center">
   Covid Tracker
-    <br />
+    <br /> 
     <a href="https://github.com/ChristianPredoianu/covid-tracker"><strong>Explore the docs »</strong></a>
     <br />
     <br />
