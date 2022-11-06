@@ -16,7 +16,7 @@
     <a href="https://covid19trackerv2.netlify.app/">View Demo</a>
     ·
     <a href="https://covid19trackerv2.netlify.app/issues">Report Bug</a>
-    ·  
+    ·   
    
   </p>
 </p>
