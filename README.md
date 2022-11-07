@@ -8,17 +8,13 @@
   </a> 
 
   <h3 align="center">Covid Tracker</h3>
-    
   <p align="center">
-  Covid Tracker
-    <br /> 
     <a href="https://github.com/ChristianPredoianu/covid-tracker"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://covid19trackerv2.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/ChristianPredoianu/covid-tracker/issues">Report Bug</a>
-    ·   
+    
    
   </p>
 </p>
