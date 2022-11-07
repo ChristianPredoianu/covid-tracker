@@ -52,7 +52,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A Netflix clone made with Vue 3 + Vite + Firebase to mimic Netflix functionality.
+A Covid tracker made with vanilla js + vite
 
 ### Built With
 
@@ -90,7 +90,7 @@ To get a local copy up and running follow these simple steps.
    ```sh
    npm install
    ``` 
-3. Serve with hot reload at localhost:3000
+3. Serve with hot reload at localhost
    ```sh
     npm run dev
    ``` 
